@@ -1,0 +1,9 @@
+281264d386f8c621def10c9b49b58224 *DESCRIPTION
+6e6873e8a58e85a8f101e7ec2ec1c6b8 *NAMESPACE
+e4b4b615ea2717adfe93db86224548c3 *R/goTest.R
+a716a200f035df590ba00506cda53daa *man/getDefaultBounds.Rd
+b22e5858016b519bca244757ccb503d4 *man/getGlobalOpt.Rd
+2cc390298edd43ef3f8c669d5fbcb8a7 *man/getProblemDimen.Rd
+016e8b6d49256b9c4c458bee8e78379a *man/globalOptTests-package.Rd
+6c7dcbc09a20b087f194c7df1e743716 *man/goTest.Rd
+6815ca9aa9379fbfdd82d7e605be5aa9 *src/objFun.c
