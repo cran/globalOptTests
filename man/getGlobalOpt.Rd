@@ -10,7 +10,7 @@
 getGlobalOpt(fnName)
 }
 \arguments{
-  \item{fnName}{a character vector naming the objective function to
+  \item{fnName}{A character vector naming the objective function to
     call. Options are elements of
      \preformatted{c("Ackleys", "AluffiPentini", "BeckerLago",
       "Bohachevsky1", "Bohachevsky2", "Branin",
@@ -27,15 +27,28 @@ getGlobalOpt(fnName)
       "Schaffer2", "Schubert", "Schwefel",
       "Shekel10", "Shekel5", "Shekel7",
       "Shekelfox5", "Wood", "Zeldasine10",
-      "Zeldasine20")}.
+      "Zeldasine20").}
     Unique partial matches to these elements
-      are accepted.  
+    are accepted.  
   }
 }
-\value{real representing the global optimum (minimum) of the objective
+\value{Real representing the global optimum (minimum) of the objective
   function named in \code{fnName}.
 }
-\author{Katharine Mullen <katharine.mullen@stat.ucla.edu>}
+\references{
+  Montaz Ali, M., Khompatraporn, C. and Zabinsky, Z. B. (2005),
+  A Numerical Evaluation of Several Stochastic Algorithms on Selected
+  Continuous Global Optimization Test Problems, \emph{Journal
+    of Global Optimization}, \bold{31}, 4, 635--672.
+  
+  Mullen, K. M. (2014), Continuous Global Optimization in R,
+  \emph{Journal of Statistical Software}, \bold{60}, 6, 1--45,
+  URL \url{http://www.jstatsoft.org/v60/i06/}.
+
+  \url{http://www.gamsworld.org/performance/selconglobal/selcongloballib.htm}
+  for the \code{C} source. 
+}
+\author{Katharine Mullen \email{katharine.mullen@stat.ucla.edu} }
 \examples{
 getGlobalOpt("Ackleys")
 getGlobalOpt("AluffiPentini")

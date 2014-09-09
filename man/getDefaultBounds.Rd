@@ -1,7 +1,7 @@
 \name{getDefaultBounds}
 \alias{getDefaultBounds}
 \title{Get the default box constraints for the objective function.}
-\description{This function returns real vectors representing the default
+\description{This function returns the default
   lower and upper bounds (box constraints) for the given objective
   function. 
 }
@@ -9,7 +9,7 @@
 getDefaultBounds(fnName)
 }
 \arguments{
-  \item{fnName}{a character vector naming the objective function to
+  \item{fnName}{A character vector naming the objective function to
     call. Options are elements of
     \preformatted{c("Ackleys", "AluffiPentini", "BeckerLago",
       "Bohachevsky1", "Bohachevsky2", "Branin",
@@ -26,16 +26,21 @@ getDefaultBounds(fnName)
       "Schaffer2", "Schubert", "Schwefel",
       "Shekel10", "Shekel5", "Shekel7",
       "Shekelfox5", "Wood", "Zeldasine10",
-      "Zeldasine20")}.
+      "Zeldasine20").}
       Unique partial matches to these elements
       are accepted. 
   }
 }
-\value{a list containing elements
-\item{lower}{vector of reals representing lower bounds}
-\item{upper}{vector of reals representing upper bounds}
+\value{A list containing the elements
+\item{lower}{Vector of reals representing lower bounds}
+\item{upper}{Vector of reals representing upper bounds}
 }
-\author{Katharine Mullen <katharine.mullen@stat.ucla.edu>}
+\author{Katharine Mullen \email{katharine.mullen@stat.ucla.edu} }
+\references{
+  Mullen, K. M. (2014), Continuous Global Optimization in R,
+  \emph{Journal of Statistical Software}, \bold{60}, 6, 1--45,
+  URL \url{http://www.jstatsoft.org/v60/i06/}.
+}
 \examples{
 getProblemDimen("Ackleys")
 getProblemDimen("AluffiPentini")
